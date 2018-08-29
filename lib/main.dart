@@ -1,4 +1,4 @@
-import 'package:flut_test/widgets/URaisedButton.dart';
+import 'package:flut_test/widgets/UTabController.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,14 +16,10 @@ class MyScaffold extends StatefulWidget {
 class MyScaffoldState extends State<MyScaffold> {
   int count = 0;
 
-  _increment() {
-    setState(() {
-      count++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    return URaisedButton();
+    // Material is a conceptual piece of paper on which the UI appears.
+    return Material(
+        child: UTabController());
   }
 }
